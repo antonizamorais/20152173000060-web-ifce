@@ -1,0 +1,90 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(background.png);
+	background-size: cover;
+	font-family: sans-serif;
+	background-attachment: fixed;
+}
+.fazercadast
+{
+	background-color: black;
+	box-sizing: border-box;
+	padding: 80px 40px;
+	width: 500px;
+	height: 1300px;
+	transform: translate(-50%,-50%);
+	top: 110%;
+	left: 50%;
+	position: absolute;
+
+
+}
+.cadastro
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+}
+.fazercadast p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.fazercadast input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.fazercadast input[type = "text"]
+.fazercadast input[type = "password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+:: placeholder
+{
+	color: rgba(255,255,255, .5);
+}
+.fazercadast input[type = "submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff267e;
+	cursor: pointer;
+	border-radius: 20px;	
+}
+.fazercadast input[type = "submit"]: hover
+{
+	background: #efed40;
+	color: #262626;
+}
+.fazercadast a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
