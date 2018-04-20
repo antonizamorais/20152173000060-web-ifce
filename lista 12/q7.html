@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lista 12</title>
+	<script type="text/javascript">
+		function funcao_7() {
+			var valor = form.caixa1.value;
+
+			if (valor>0 && valor<=10) {
+				alert("insuficiente");
+			}
+			if (valor>10 && valor<=14) {
+				alert("Bom");
+			}if (valor>14) {
+				alert("muito bom");
+			}
+
+			
+		}
+	</script>
+</head>
+<body>
+	<form name="form">
+		<p>insira um numero</p>
+
+		<input type="number"  name="caixa1"/>
+
+		<input type="button" name="botao" onclick="funcao_7()" value="click">
+	</form>
+	
+</body>
+</html>
