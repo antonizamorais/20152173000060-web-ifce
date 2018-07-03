@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Pagina Inicial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">ger event</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about"><span class="glyphicon glyphicon-info-sign"></span> SOBRE</a></li>
+        <li><a href="#services"><span class="glyphicon glyphicon-cog"></span> SERVIÇOS</a></li>
+        <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> CONTATOS</a></li>
+        <li><a href="../pagina_cadastro/cadastro_v.2.html"><span class="glyphicon glyphicon-user"></span> CADASTRO</a></li>
+        <li><a href="http://localhost/projeto_web/pagina_login/"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+        <div class="dropdown">
+          <button class="dropbtn"><span class="glyphicon glyphicon-plus-sign"></span> MAIS</button>
+            <div class="dropdown-content">
+              <a href="eventos.html">Eventos</a>
+              <a href="programacao.html">Programação</a>
+              <a href="duvidas.html">Duvidas</a>
+            </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Sistema de Gerenciamento de Eventos</h1> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Sobre o sistema</h2><br>
+      <h4>o ger event é o sistema de gerenciamento do ifce campus Tauá. Destinados a alunos, professores e comunidade em geral que tenha interresse em participar de algum evento disponibilizado pela instituição.</h4><br>
+      <p>Fique a vontade para se inscrever e participar com a gente.</p>
+      <br><button class="btn btn-default btn-lg">Saiba mais</button>
+    </div>
+    <div class="col-sm-4">
+      <img src="event.png">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVIços</h2>
+  <h4>O que nós oferemos</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class=" glyphicon glyphicon-pencil logo-small"></span>
+      <h4>INSCRIÇÃO</h4>
+      <p>Faça inscrição em eventos de forma simples sem precisar fazer um novo cadastro sempre que for se inscrever em outro evento ou subevento</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-file logo-small"></span>
+      <h4>SUBMISSÃO</h4>
+      <p>possibilidade de enviar trabalhos para serem avaliados por cordenadores ou facilitadores do evento</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-repeat logo-small"></span>
+      <h4>SUBEVENTOS</h4>
+      <p>Ao se increver em um evento que possui subeventos, escolha qual subevento deseja participar</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>VERDE</h4>
+      <p>Com a possibilidade de gerenciar todo o evento através de um sistema web, papeis tornam-se em muitas ocasiões desnecessarios</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFICADO</h4>
+      <p>Receba seu certificado conforme a partição no evento ou subevento inscrito</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>Mais serviços</h4>
+      <p>Conheça o que temos a oferecer <a href="#">click aqui</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTATOS</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Entre em contato</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Tauá, CE</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +55 88 997188998</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> sousaantoniza@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comente" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(-6.0017215,-40.311141,14);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+    <p class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2018 Antoniza</font></font></p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidade</font></font></a></li>
+      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos</font></font></a></li>
+      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apoio, suporte</font></font></a></li>
+    </ul>
+</footer> 
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

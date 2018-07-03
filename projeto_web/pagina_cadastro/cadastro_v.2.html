@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+
+	<link rel="stylesheet" type="text/css" href="css/cadastro_v2.css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="formulario">
+   <div class="container">
+       <div class="col-lg-8 col-lg-offset-2">
+           
+            <h1 class="horizontal">Cadastro</h1>
+            
+            <div class="inner-form">
+
+                <div class="tab-content">
+                    <div class="tab-pane active in fade" id="tab1">
+                        <div class="panel-group">
+                         
+                        <form role="form"enctype="multipart/form-data" 
+                        action="php/cadastro_v2.php" method="POST" id="form">
+            			<div class="row">
+        			        
+        			    	<div class="col-lg-12">
+        			    	    <label>Nome</label>
+        			    	    <div class="form-group">
+        							<input type="text" name="nome" id="nome" class="form-control" placeholder="nome completo" required="">
+        			    		</div>
+        			    	</div>
+
+                            <div class="col-lg-12">
+                                <label>Sexo</label>
+                                <div class="form-group">
+                                    <select name="sexo" size="1" class="form-control" id="sexo" required="">
+                                        <option>feminino</option>
+                                        <option>masculino</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Data de Nascimento</label>
+                                <div class="form-group">
+                                    <input type="date" name="datanasc" id="datanasc" class="form-control" placeholder="" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>CPF</label>
+                                <div class="form-group">
+                                    <input type="number" name="cpf" id="cpf" class="form-control" placeholder="" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Endereço</label>
+                                <div class="form-group">
+                                    <input type="text" name="endereco" 
+                                    id="endereco" class="form-control" placeholder="rua, numero, bairro" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Cidade</label>
+                                <div class="form-group">
+                                    <input type="text" name="cidade" id="cidade" class="form-control" placeholder="" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>CEP</label>
+                                <div class="form-group">
+                                    <input type="number" name="cep" id="cep" class="form-control" placeholder="" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Estado</label>
+                                <div class="form-group">
+                                    <select name="estado" class="form-control">
+                                        <option value="ac">Acre</option> 
+                                        <option value="al">Alagoas</option> 
+                                        <option value="am">Amazonas</option> 
+                                        <option value="ap">Amapá</option> 
+                                        <option value="ba">Bahia</option> 
+                                        <option value="ce">Ceará</option> 
+                                        <option value="df">Distrito Federal</option> 
+                                        <option value="es">Espírito Santo</option> 
+                                        <option value="go">Goiás</option> 
+                                        <option value="ma">Maranhão</option> 
+                                        <option value="mt">Mato Grosso</option> 
+                                        <option value="ms">Mato Grosso do Sul</option> 
+                                        <option value="mg">Minas Gerais</option> 
+                                        <option value="pa">Pará</option> 
+                                        <option value="pb">Paraíba</option> 
+                                        <option value="pr">Paraná</option> 
+                                        <option value="pe">Pernambuco</option> 
+                                        <option value="pi">Piauí</option> 
+                                        <option value="rj">Rio de Janeiro</option> 
+                                        <option value="rn">Rio Grande do Norte</option> 
+                                        <option value="ro">Rondônia</option> 
+                                        <option value="rs">Rio Grande do Sul</option> 
+                                        <option value="rr">Roraima</option> 
+                                        <option value="sc">Santa Catarina</option> 
+                                        <option value="se">Sergipe</option> 
+                                        <option value="sp">São Paulo</option> 
+                                        <option value="to">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Email</label>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" data-error="Por favor, informe um e-mail correto." required="">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Senha</label>
+                                <div class="form-group">
+                                    <input type="password" name="senha" id="inputPassword" class="form-control" data-minlength="6" required>
+                                    <span class="help-block">Mínimo de seis (6) digitos</span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <label>Confirmar Senha</label>
+                                <div class="form-group">
+                                    <input type="password" name="conf_senha" id="conf_senha" class="form-control" placeholder="" data-match="#inputPassword" data-match-error="Atenção! As senhas não estão iguais." required="">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <label>Tipo de usuario</label>
+                                <div class="form-group">
+                                    <select name="tipo_usuarios" size="1" class="form-control" id="tipo_usuarios" required="">
+                                        <option>participante</option>
+                                    </select>
+                                </div>
+                            </div>
+        					<div class="col-lg-12+2">
+        					    <button class="btn btn-info btn-lg btn-block" type="submit"><font style="vertical-align: inherit;" onclick=" return validar();"><font style="vertical-align: inherit;">CADASTRAR</font></font></button>
+        					</div>    
+                            <footer class="my-5 pt-5 text-muted text-center text-small">
+                            <p class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2018 Antoniza</font></font></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidade</font></font></a></li>
+                                <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos</font></font></a></li>
+                                <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apoio, suporte</font></font></a></li>
+                            </ul>
+                        </footer>   
+        						
+            			    </div>
+                        </div>
+                    </div>
+                </div>
+			</div>  <!-- inner-form -->
+		
+		</div>   
+	</div>   
+</div> 
+
+
+<script type="text/javascript">
+    function validar() {
+    var nome = form.nome.value;
+    var sexo = form.sexo.value;
+    var datanasc = form.datanasc.value;
+    var cpf = form.cpf.value;
+    var endereco = form.endereco.value;
+    var bairro = form.bairro.value;
+    var cidade = form.cidade.value;
+    var estado = form.estado.value;
+    var cep = form.cep.value;
+    var email = form.email.value;
+    var senha = form.senha.value;
+    var conf_senha = form1.conf_senha.value;
+
+    if (nome.length < 10) {
+        alert('Digite seu nome completo');
+        form1.nome.focus();
+        return false;
+    }
+
+    if ((email.length != 0) && ((email.indexOf("@")<1)||(email.indexOf('.')<1)))  {
+        alert("email inválido");
+        form.email.value = "";
+        form.email.focus();
+        return false;
+    }
+
+    if (senha != rep_senha) {
+        alert('Senhas diferentes');
+        form1.senha.focus();
+        return false;
+    }
+}
+
+
+</script>
+
+</body>
+</body>
+</html>

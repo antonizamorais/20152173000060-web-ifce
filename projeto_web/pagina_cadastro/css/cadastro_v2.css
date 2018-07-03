@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+
+.formulario{
+   font-family: 'Josefin Sans', sans-serif;
+   background: #f7f7f7; 
+   padding:60px 0px;
+}
+
+h1{
+    font-weight:600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform:capitalize;
+    text-align:center;
+    color:#FFF;
+    margin:40px 0px;
+}
+
+.inner-form{
+    background:#FFF;
+    padding:80px;
+    border-radius:10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+
+label{
+    font-weight:400;
+    font-size:15px;
+}
+
+.form-control {
+    background-color: #f7f7f7;
+    box-shadow: none;
+    color: #565656;
+    font-size:14px;
+    padding:30px 10px;
+    margin-bottom:30px;
+}
+.forgot{
+    text-align:center;
+    margin-top:30px;
+    font-size:15px;
+    text-decoration: underline;
+}
+
+
+.nav>li>a{
+    font-size: 16px;
+    color: #3ec2de;
+}
